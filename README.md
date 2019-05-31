@@ -4,10 +4,10 @@ This repository was created as a starting point for all future projects using gi
 It was designed so that the follow features could be implemented immediatly for a new project, rather than initializing each.
 
 Autoprefixer <br>
-Browser-sync
-Del
-Gulp
-JQuery
-Normalize.css
-Post.css
-webpack
+Browser-sync <br>
+Del <br>
+Gulp <br>
+JQuery <br>
+Normalize.css <br>
+Post.css <br>
+webpack <br>
