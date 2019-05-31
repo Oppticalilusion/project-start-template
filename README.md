@@ -1,6 +1,13 @@
-# larayner-web-demo
+# Project Start Template
 
-This project was created as a demo to show what updates needed to be done to an existing website.
-A very barebones example of what changes would be made to the existing webpage.
+This repository was created as a starting point for all future projects using git.
+It was designed so that the follow features could be implemented immediatly for a new project, rather than initializing each.
 
-More to be added here later
+Autoprefixer
+Browser-sync
+Del
+Gulp
+JQuery
+Normalize.css
+Post.css
+webpack
