@@ -3,3 +3,7 @@
 @import "normalize.css";
 @import "base/_variables";
 @import "base/_global";
+
+/* All styling will exist based on classes in the modules folder */
+/* Allows for each styleing to exist in its own place for easy and well */
+/* managed code structure */

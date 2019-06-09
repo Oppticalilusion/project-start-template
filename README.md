@@ -19,7 +19,10 @@ Project Folder holds: README, package.json, gulpfile, gitignore, app[], gulp[] <
  - app: assets[], temp[], any html pages <br>
     - assets: images[] /*Holds all image files*/, styles[], scripts[] <br>
        - styles: styles.css /*Main Styles*/, base[] /*Holds global styles 
-       and variables*/ <br>
+       and variables*/, modules[] /*Holds all individual class styles*/ <br>
        - scripts: App.js /*Main Js File*/, modules[] /*Holds classes*/ <br>
     - temp: styles[] /*Used with postcss*/, scripts[] /*Used with webpack and babel*/ <br>
  - gulp: tasks[]: scripts.js, styles.js, watch.js /*gulp tasks*/ <br>
+
+
+// Kevan Rayner 2019
