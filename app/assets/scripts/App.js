@@ -1,3 +1,8 @@
+// Kevan Rayner 2019
+//
+// Example File
+// -------------------------------------------------------
+
 var $ = require('jquery');
 //var Person = require('./modules/Person');
 import Person from './modules/Person';

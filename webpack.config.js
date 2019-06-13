@@ -1,3 +1,8 @@
+// Kevan Rayner 2019	
+//
+// Uses Babel to pull all scripts together in a temp file
+// Webpack loads converted files for accessability
+
 var path = require('path');
 
 module.exports = {

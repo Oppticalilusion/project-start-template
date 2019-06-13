@@ -1,3 +1,8 @@
+// Kevan Rayner 2019
+//
+// Example File
+// Creates a class and uses parts of it in a basic example
+
 class Person {
 	constructor(fullName, favColor) {
 		this.name = fullName;
