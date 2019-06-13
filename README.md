@@ -1,7 +1,7 @@
 # Project Start Template
 
 This repository was created as a starting point for all future projects using git.
-It was designed so that the follow features could be implemented immediatly for a new project, rather than initializing each.
+It was designed so that the follow features could be implemented immediatly for a new project, rather than initializing each time.
 
 Autoprefixer <br>
 Browser-sync <br>
