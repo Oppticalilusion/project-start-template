@@ -11130,9 +11130,19 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // Example File
 // -------------------------------------------------------
 
+var mobileMenu = new _MobileMenu2.default();
+
+//new RevealOnScroll($(".feature-item"), "85%"); //Our-features area
+//new RevealOnScroll($(".testimonial"), "60%"); //Testimonials area
+
+var stickyHeader = new _StickyHeader2.default();
+
+var modal = new _Modal2.default();
+
+//-------------------------------------------------------------
+
 //var $ = require('jquery');
 //var Person = require('./modules/Person');
-
 
 var Adult = function (_Person) {
   _inherits(Adult, _Person);

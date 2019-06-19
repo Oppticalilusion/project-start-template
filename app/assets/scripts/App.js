@@ -10,6 +10,18 @@ import Modal from './modules/Modal';
 
 import $ from 'jquery';
 
+
+var mobileMenu = new MobileMenu();
+
+//new RevealOnScroll($(".feature-item"), "85%"); //Our-features area
+//new RevealOnScroll($(".testimonial"), "60%"); //Testimonials area
+
+var stickyHeader = new StickyHeader();
+
+var modal = new Modal();
+
+//-------------------------------------------------------------
+
 //var $ = require('jquery');
 //var Person = require('./modules/Person');
 import Person from './modules/Person';
