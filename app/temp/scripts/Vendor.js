@@ -2331,6 +2331,8 @@ __webpack_require__(10);
 
 __webpack_require__(11);
 
+__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../temp/scripts/modernizr\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 /***/ })
 
 /******/ });
