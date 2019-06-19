@@ -11095,15 +11095,19 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _RevealOnScroll = __webpack_require__(3);
+var _MobileMenu = __webpack_require__(3);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _RevealOnScroll = __webpack_require__(4);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _StickyHeader = __webpack_require__(4);
+var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
-var _Modal = __webpack_require__(6);
+var _Modal = __webpack_require__(7);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -11111,7 +11115,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _Person2 = __webpack_require__(7);
+var _Person2 = __webpack_require__(8);
 
 var _Person3 = _interopRequireDefault(_Person2);
 
@@ -11125,9 +11129,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //
 // Example File
 // -------------------------------------------------------
-
-//import MobileMenu from './modules/MobileMenu';
-
 
 //var $ = require('jquery');
 //var Person = require('./modules/Person');
@@ -11168,6 +11169,61 @@ jane.payTaxes();
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+	function MobileMenu() {
+		_classCallCheck(this, MobileMenu);
+
+		this.siteHeader = (0, _jquery2.default)(".site-header");
+		this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
+		this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
+		this.events();
+
+		/* Bad spaghetti code
+  $(".site-header__menu-icon").click(function() {
+  	console.log("Hello There");
+  }) */
+	}
+
+	_createClass(MobileMenu, [{
+		key: "events",
+		value: function events() {
+			this.menuIcon.click(this.toggleTheMenu.bind(this));
+		}
+	}, {
+		key: "toggleTheMenu",
+		value: function toggleTheMenu() {
+			this.menuContent.toggleClass("site-header__menu-content--is-visible");
+			this.siteHeader.toggleClass("site-header--is-expanded");
+			this.menuIcon.toggleClass("site-header__menu-icon--close-x");
+		}
+	}]);
+
+	return MobileMenu;
+}();
+
+exports.default = MobileMenu;
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11230,7 +11286,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11250,7 +11306,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(5);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11339,7 +11395,7 @@ var StickyHeader = function () {
 exports.default = StickyHeader;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11706,7 +11762,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11775,7 +11831,7 @@ var Modal = function () {
 exports.default = Modal;
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
