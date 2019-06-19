@@ -2,6 +2,7 @@
 
 @import "normalize.css";
 @import "base/_variables";
+@import "base/_mixins";
 @import "base/_global";
 
 /* All styling will exist based on classes in the modules folder */
